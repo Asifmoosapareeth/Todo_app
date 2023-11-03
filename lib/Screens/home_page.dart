@@ -33,9 +33,11 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.yellow.shade100,
       appBar: AppBar(
-        title: Text(
-          'Todo',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+        title: Center(
+          child: Text(
+            'Todo',
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+          ),
         ),
         elevation: 0,
         actions: [
@@ -45,7 +47,9 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Icon(CupertinoIcons.check_mark_circled_solid),
                 SizedBox(width: 5),
-                Text('Completed',),],
+                Text('Completed',),
+              SizedBox(width: 10,)
+              ],
             ),
           ),
         ],
@@ -60,7 +64,7 @@ class _HomePageState extends State<HomePage> {
           SizedBox(height: 20,),
           Text(
             'What do you want to do today',
-            style: TextStyle(color: Colors.white70, fontWeight: FontWeight.bold, fontSize: 15),
+            style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 15),
           ),
         ],
       )
